@@ -1,7 +1,7 @@
 import { Link } from "react-router";  
   
   
-  const Home = () =>{
+  const Dashboard = () =>{
     return(
         <>
 <section class="mt-5">
@@ -127,4 +127,4 @@ import { Link } from "react-router";
   }
 
 
-  export default Home;
+  export default Dashboard;
