@@ -1,19 +1,23 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
-import Layout from "./usercomponents/Layout";
-import AuthLayout from "./usercomponents/AuthLayout";
+import Layout from "./userpages/usercomponents/Layout";
+import AuthLayout from "./userpages/usercomponents/AuthLayout";
 import Home from './websitepages/Home';
 import About from './websitepages/About';
+import VersionUpdate from './websitepages/VersionUpdate';
 import Contact from './websitepages/Contact';
 import Dashboard from './userpages/Dashboard';
 import Login from './userpages/Login';
 import PageNotFound from "./userpages/PageNotFound"; 
 import EmployeeAttendanceList from "./userpages/EmployeeAttendanceList"; 
 import BreakTimeByEmployeeList from "./userpages/BreakTimeByEmployeeList"; 
-import FrontLayout from "./websitecomponents/FrontLayout";
+import FrontLayout from "./websitepages/websitelayout/FrontLayout";
+
+
 
 
 const router = createBrowserRouter([
 
+ 
   // {
   //   path: "/",
   //   element: <FrontLayout />,  
@@ -27,8 +31,9 @@ const router = createBrowserRouter([
     element: <FrontLayout />,   // Common layout (Header + Footer)
     children: [
       { index: true, element: <Home /> },  // Default route "/"
-      { path: "/about", element: <About /> },
-      { path: "/contact", element: <Contact /> },
+      { path: "about", element: <About /> },
+      { path: "version-update", element: <VersionUpdate /> },
+      { path: "contact", element: <Contact /> },
       { path: "*", element: <PageNotFound /> },
     ],
   },

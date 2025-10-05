@@ -1,8 +1,18 @@
+ import HeaderBanner from './websitecomponents/HeaderBanner';
+ import AboutSection from './websitecomponents/AboutSection';
+ import FeaturesSection from './websitecomponents/FeaturesSection';
+
 
 const Home = () => {
+
+    
+ 
+
     return(
         <>
-            <h1>This is home page</h1>
+            <HeaderBanner />
+            <AboutSection />          
+            <FeaturesSection />
         </>
     )
 }
